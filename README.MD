@@ -1,1 +1,1 @@
-https://Gromkov-cloud.github.io/Card-Solver/dist/
+[Results here](https://Gromkov-cloud.github.io/Card-Solver/dist/)
