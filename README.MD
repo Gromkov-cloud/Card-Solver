@@ -1,0 +1,1 @@
+https://Gromkov-cloud.github.io/Card-Solver/dist/
