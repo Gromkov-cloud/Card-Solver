@@ -1,11 +1,8 @@
 @import url(fonts.css);
+@import url(vars.css);
 
 body{
-    background-color: rgb(0, 0, 56);
-    color: white;
-}
-
-h1{
-    font-family: Gilroy;
-    font-weight: 600;
+    font-family: var(--Gilroy);
+    background-color: var(--white);
+    color: var(--dark-blue);
 }
