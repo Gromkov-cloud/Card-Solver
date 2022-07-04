@@ -42,17 +42,17 @@ ul {
 .button_large {
   font-size: 18px;
   padding: 15px 22px;
-  font-weight: 700;
+  font-weight: 600;
 }
 .button_small {
   font-size: 14px;
   padding: 8px 12px;
   font-weight: 600;
 }
-.button_light {
+.button_dark {
   background-color: var(--primary-blue);
 }
-.button_dark {
+.button_light {
   background-color: var(--primary-blue-opacity-15);
   color: var(--primary-blue);
 }
@@ -71,17 +71,34 @@ ul {
   cursor: pointer;
 }
 .accordion__body {
-  max-height: 0;
+  height: 0;
   opacity: 0;
   margin: 0;
   padding: 0;
-  transition: height 0.3s ease;
 }
 .accordion_active .accordion__body {
-  max-height: 100px;
+  height: 100%;
   opacity: 1;
-  transition: height 0.3s ease;
 }
 .accordion_active .features__accordion-title {
   opacity: 1;
+}
+
+.section__title {
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 110%;
+  letter-spacing: -0.03em;
+  color: var(--dark-blue);
+}
+.section__subtitle {
+  margin: 5px 0 0 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  color: var(--dark-blue-opacity);
 }
