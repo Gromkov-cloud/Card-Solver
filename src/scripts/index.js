@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-// import '../styles/style.css'
-import 'reset-css'
-import '../styles/scss.scss'
-=======
 const accordionItems = document.querySelectorAll(".accordion__title")
 accordionItems.forEach(accordionItem => {
     accordionItem.addEventListener("click", function () {
@@ -65,4 +60,3 @@ function generateURL(id) {
 }
 
 findVideos();
->>>>>>> 30ba7d456e87f51eba155d5976880a51bd57b685
