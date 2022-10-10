@@ -1,0 +1,14 @@
+:root {
+  --Gilroy: Gilroy, sans-serif;
+  --white: #FFFFFF;
+  --primary-blue: #398BFF;
+  --primary-blue-opacity-15: rgba(44, 130, 253, 0.15);
+  --primary-blue-opacity-20: rgba(44, 130, 253, 0.2);
+  --secondary-blue: #031E3E;
+  --dark-gray: #6A6A6A;
+  --dark-blue: #001731;
+  --light-blue: #AAC0E0;
+  --dark-blue-opacity: rgba(0, 23, 49, 0.55);
+  --dark-blue-opacity-30: rgba(0, 23, 49, 0.3);
+  --dark-blue-opacity-75: rgba(0, 23, 49, 0.75);
+}
