@@ -34,6 +34,8 @@ ul {
   border-radius: 4px;
   display: block;
   width: fit-content;
+  border: none;
+  outline: none;
   color: var(--white);
 }
 .button:hover {
@@ -41,6 +43,7 @@ ul {
 }
 .button_large {
   font-size: 18px;
+  line-height: 22px;
   padding: 15px 22px;
   font-weight: 600;
 }
@@ -48,6 +51,13 @@ ul {
   font-size: 14px;
   padding: 8px 12px;
   font-weight: 600;
+}
+.button_medium {
+  font-size: 14px;
+  padding: 10px 12px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0.01em;
 }
 .button_dark {
   background-color: var(--primary-blue);
@@ -71,14 +81,17 @@ ul {
   cursor: pointer;
 }
 .accordion__body {
+  position: relative;
   height: 0;
   opacity: 0;
   margin: 0;
   padding: 0;
+  z-index: -1;
 }
 .accordion_active .accordion__body {
   height: 100%;
   opacity: 1;
+  z-index: 1;
 }
 .accordion_active .features__accordion-title {
   opacity: 1;
@@ -92,6 +105,11 @@ ul {
   line-height: 110%;
   letter-spacing: -0.03em;
   color: var(--dark-blue);
+}
+.section__title-icon {
+  display: block;
+  margin: 0 0 24px 0;
+  padding: 0;
 }
 .section__subtitle {
   margin: 5px 0 0 0;

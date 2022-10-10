@@ -37,6 +37,8 @@ ul{
     display: block;
     width: fit-content;
 
+    border: none;
+    outline: none;
     color: var(--white);
     
     &:hover{
@@ -45,6 +47,7 @@ ul{
 
     &_large{
         font-size: 18px;
+        line-height: 22px;
         padding: 15px 22px;
         font-weight: 600;
     }
@@ -52,6 +55,14 @@ ul{
         font-size: 14px;
         padding: 8px 12px;
         font-weight: 600;
+    }
+    &_medium{
+        font-size: 14px;
+        padding: 10px 12px;
+        font-weight: 700;
+        line-height: 17px;
+
+        letter-spacing: 0.01em;
     }
     &_dark{
         background-color: var(--primary-blue);
@@ -83,15 +94,20 @@ ul{
 	// .accordion__body
 
 	&__body {
+        position: relative;
 		height: 0;
 		opacity: 0;
 		margin: 0;
 		padding: 0;
+
+        z-index: -1;
 	}
 
 	&_active &__body{
 		height: 100%;
 		opacity: 1;
+
+        z-index: 1;
 	}
 
     &_active .features__accordion-title{
@@ -113,6 +129,11 @@ ul{
         color: var(--dark-blue);
     }
 
+    &__title-icon{
+        display: block;
+		margin: 0 0 24px 0;
+		padding: 0;
+    }
 
     &__subtitle {
         margin: 5px 0 0 0;
