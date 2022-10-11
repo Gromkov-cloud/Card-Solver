@@ -1,0 +1,276 @@
+.pricing {
+    // .pricing__header
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 0 50px 0;
+    }
+
+    // .pricing__header-heading
+
+    &__header-heading {
+    }
+
+    // .pricing__price-switcher
+
+    &__price-switcher {
+        width: 100px;
+        height: 50px;
+        background-color: var(--primary-blue);
+    }
+
+    // .pricing__cards
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+}
+
+.price-card {
+    max-width: 400px;
+    padding: 28px 24px;
+    margin: 0 15px 0 0;
+
+    background: var(--white);
+    box-shadow: 0px 4px 15px rgba(10, 17, 85, 0.1);
+    border-radius: 12px;
+
+    transition: all 0.2s ease;
+
+    &:last-child {
+        margin: 0;
+    }
+
+    &:hover {
+        background: #031e3e;
+        box-shadow: 0px 4px 50px rgba(57, 139, 255, 0.3);
+
+        .price-card__sale {
+            color: var(--white);
+            background: unset;
+            outline: 1px solid var(--white);
+        }
+
+        .price-card__cost {
+            color: var(--white);
+
+            span {
+                color: var(--white);
+            }
+
+            &_sale {
+                color: #f04747;
+            }
+        }
+
+        .price-card__time,
+        .price-card__description,
+        .price-card__option-title {
+            color: var(--white);
+        }
+    }
+
+    // .price-card__heading
+
+    &__heading {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    // .price-card__title
+
+    &__title {
+        margin: 0;
+        padding: 0;
+
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 0.02em;
+
+        color: var(--primary-blue);
+    }
+
+    // .price-card__sale
+
+    &__sale {
+        margin: 0 0 0 10px;
+        padding: 5px 12px;
+
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 16px;
+        color: #f04747;
+
+        background: rgba(240, 71, 71, 0.1);
+        border-radius: 4px;
+    }
+
+    &__label {
+        position: relative;
+        margin: 0 12px 0 auto;
+
+        z-index: 2;
+
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+        color: var(--white);
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: -12px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 166px;
+            height: 37px;
+            z-index: -1;
+            background-image: url(../../images/price-card-label.svg);
+        }
+    }
+
+    // .price-card__pricing
+
+    &__pricing {
+        margin-top: 18px;
+    }
+
+    // .price-card__cost
+
+    &__cost {
+        margin: 0;
+        padding: 0;
+
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 140%;
+
+        color: var(--dark-blue);
+
+        span {
+            font-weight: 600;
+            font-size: 20px;
+
+            color: var(--dark-blue-opacity);
+        }
+
+        &_sale {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            text-decoration-line: line-through;
+
+            color: #f04747;
+        }
+    }
+
+    // .price-card__time
+
+    &__time {
+        margin: 8px 0;
+
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.03em;
+
+        color: var(--dark-blue-opacity);
+    }
+
+    // .price-card__description
+
+    &__description {
+        margin: 0 0 22px 0;
+
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.01em;
+
+        color: var(--dark-gray);
+    }
+
+    // .price-card__button
+
+    &__button {
+        width: 100%;
+        text-align: center;
+    }
+
+    // .price-card__options
+
+    &__options {
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 50px;
+    }
+
+    // .price-card__option
+
+    &__option {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin: 0 0 40px 0;
+
+        &:last-child {
+            margin: 0;
+        }
+
+        &_disabled {
+            opacity: 0.5;
+        }
+    }
+
+    // .price-card__option-thumb
+
+    &__option-thumb {
+        min-width: 60px;
+        max-width: 60px;
+        height: 60px;
+
+        background: #f6f7fb;
+        border-radius: 4px;
+
+        img {
+            display: block;
+            margin: 0 auto;
+            top: -50%;
+            transform: translateY(50%);
+        }
+    }
+
+    // .price-card__option-icon
+
+    &__option-icon {
+    }
+
+    // .price-card__option-title
+
+    &__option-title {
+        width: 100%;
+        margin: 0 18px;
+
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+
+        color: var(--dark-blue-opacity);
+    }
+
+    // .price-card__option-about
+
+    &__option-info {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

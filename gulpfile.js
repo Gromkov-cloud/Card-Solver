@@ -3,6 +3,7 @@ const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const clean = require('gulp-clean')
 const fileinclude = require("gulp-file-include")
+const concatCss = require('gulp-concat-css');
 
 const paths = {
     html: {
@@ -10,7 +11,12 @@ const paths = {
         dest: "./app/"
     },
     styles: {
-        src: "./src/styles/**/*.scss",
+        main: "./src/styles/main.scss",
+        fonts: "./src/styles/fonts.scss",
+        normalize: "./src/styles/normalize.scss",
+        variables: "./src/styles/variables.scss",
+        components: "./src/Components/**/*.scss",
+        summaryMain: "./src/styles/**/*.scss",
         dest: "./app/styles/"
     },
     scripts: {
@@ -40,8 +46,9 @@ function html() {
 }
 
 function styles() {
-    return src(paths.styles.src)
+    return src([paths.styles.normalize, paths.styles.fonts, paths.styles.variables, paths.styles.main, paths.styles.components])
         .pipe(sass().on('error', sass.logError))
+        .pipe(concatCss("bundle.css"))
         .pipe(dest(paths.styles.dest))
 }
 
@@ -61,7 +68,7 @@ function fonts() {
 }
 
 function appClean() {
-    return src(paths.clean.src)
+    return src(paths.clean.src, { allowEmpty: true })
         .pipe(clean())
 }
 
@@ -77,7 +84,8 @@ function include() {
 function gulpWatch() {
     watch(paths.html.src, include);
     watch(paths.htmlInclude.src, include)
-    watch(paths.styles.src, styles);
+    watch(paths.styles.summaryMain, styles);
+    watch(paths.styles.components, styles);
     watch(paths.scripts.src, scripts)
     watch(paths.fonts.src, fonts);
     watch(paths.images.src, images)

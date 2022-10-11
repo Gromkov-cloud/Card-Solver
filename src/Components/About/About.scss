@@ -1,0 +1,54 @@
+.about-us {
+    position: relative;
+    padding-bottom: 0;
+
+    overflow: hidden;
+
+    &__bg-img {
+        position: absolute;
+        bottom: -50px;
+        left: 20px;
+        z-index: 1;
+    }
+
+    // .about-us__container
+
+    &__container {
+        background: #031e3e;
+    }
+
+    // .about-us__title-container
+
+    &__content {
+        position: relative;
+        max-width: 530px;
+        padding: 225px 0;
+        margin: 0 0 0 auto;
+
+        z-index: 2;
+    }
+
+    // .about-us__section-icon
+
+    &__section-icon {
+    }
+
+    // .about-us__section-title
+
+    &__section-title {
+        margin: 0 0 24px 0;
+        color: var(--white);
+    }
+
+    &__section-subtitle {
+        max-width: 530px;
+        margin: 0 0 35px 0;
+
+        color: var(--light-blue);
+    }
+
+    // .about-us__button
+
+    &__button {
+    }
+}

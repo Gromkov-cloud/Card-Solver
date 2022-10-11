@@ -1,11 +1,10 @@
-
-body{
+body {
     background-color: var(--white);
     color: var(--dark-blue);
     font-family: var(--Gilroy);
 }
 
-h1{
+h1 {
     color: var(--white);
     font-weight: 700;
     font-size: 72px;
@@ -13,7 +12,7 @@ h1{
     letter-spacing: -0.03em;
 }
 
-h2{
+h2 {
     color: var(--dark-blue);
     font-weight: 700;
     font-size: 28px;
@@ -21,18 +20,18 @@ h2{
     letter-spacing: -0.03em;
 }
 
-a{
+a {
     color: inherit;
     text-decoration: none;
 }
 
-ul{
+ul {
     padding: 0;
 
     list-style: none;
 }
 
-.button{
+.button {
     border-radius: 4px;
     display: block;
     width: fit-content;
@@ -40,23 +39,23 @@ ul{
     border: none;
     outline: none;
     color: var(--white);
-    
-    &:hover{
+
+    &:hover {
         outline: 3px solid var(--primary-blue-opacity-20);
     }
 
-    &_large{
+    &_large {
         font-size: 18px;
         line-height: 22px;
         padding: 15px 22px;
         font-weight: 600;
     }
-    &_small{
+    &_small {
         font-size: 14px;
         padding: 8px 12px;
         font-weight: 600;
     }
-    &_medium{
+    &_medium {
         font-size: 14px;
         padding: 10px 12px;
         font-weight: 700;
@@ -64,75 +63,74 @@ ul{
 
         letter-spacing: 0.01em;
     }
-    &_dark{
+    &_dark {
         background-color: var(--primary-blue);
     }
-    &_light{
+    &_light {
         background-color: var(--primary-blue-opacity-15);
         color: var(--primary-blue);
     }
 }
 
 .accordion {
-	width: 100%;
-	// .accordion__title
+    width: 100%;
+    // .accordion__title
 
-	&__title {
-		display: block;
-		position: relative;
-
-		margin: 0;
-		padding: 0;
-
-		z-index: 1;
-
-        &:hover{
-            cursor: pointer;
-        }
-	}
-
-	// .accordion__body
-
-	&__body {
+    &__title {
+        display: block;
         position: relative;
-		height: 0;
-		opacity: 0;
-		margin: 0;
-		padding: 0;
 
-        z-index: -1;
-	}
-
-	&_active &__body{
-		height: 100%;
-		opacity: 1;
+        margin: 0;
+        padding: 0;
 
         z-index: 1;
-	}
 
-    &_active .features__accordion-title{
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    // .accordion__body
+
+    &__body {
+        position: relative;
+        height: 0;
+        opacity: 0;
+        margin: 0;
+        padding: 0;
+
+        z-index: -1;
+    }
+
+    &_active &__body {
+        height: 100%;
+        opacity: 1;
+
+        z-index: 1;
+    }
+
+    &_active .features__accordion-title {
         opacity: 1;
     }
 }
 
 .section {
-
     &__title {
         padding: 0;
         margin: 0;
-    
+
         font-weight: 700;
         font-size: 42px;
         line-height: 110%;
         letter-spacing: -0.03em;
-    
+
         color: var(--dark-blue);
     }
 
-    &__title-icon{
+    &__title-icon {
         display: block;
-		margin: 0 0 24px 0;
-		padding: 0;
+        margin: 0 0 24px 0;
+        padding: 0;
     }
 
     &__subtitle {
@@ -146,4 +144,10 @@ ul{
 
         color: var(--dark-blue-opacity);
     }
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 80px 100px 80px;
 }
