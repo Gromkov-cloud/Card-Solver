@@ -1,24 +1,6 @@
 <section class="story container">
-    <div class="video">
-        <a class="video__link" href="https://youtu.be/2NtkUIhLOAk">
-            <picture>
-                <source
-                    srcset="images/video-placeholder.png"
-                    type="image/webp"
-                />
-                <img
-                    class="video__media"
-                    src="images/video-placeholder.png"
-                    alt="story_video"
-                />
-            </picture>
-        </a>
-        <button class="video__button" aria-label="Запустить видео">
-            <svg class="video__button-img" width="62" height="62">
-                <use href="#video-play-btn"></use>
-            </svg>
-        </button>
-    </div>
+    @@include("../Video/Video.html")
+
     <div class="story__text">
         <h2 class="story__heading">Our story</h2>
         <p class="story__subtitle">

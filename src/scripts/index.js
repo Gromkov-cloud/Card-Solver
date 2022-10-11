@@ -1,3 +1,4 @@
+
 const accordionItems = document.querySelectorAll(".accordion__title")
 accordionItems.forEach(accordionItem => {
     accordionItem.addEventListener("click", function () {
