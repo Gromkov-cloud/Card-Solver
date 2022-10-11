@@ -1,8 +1,0 @@
-@import url(fonts.css);
-@import url(vars.css);
-
-body{
-    font-family: var(--Gilroy);
-    background-color: var(--white);
-    color: var(--dark-blue);
-}

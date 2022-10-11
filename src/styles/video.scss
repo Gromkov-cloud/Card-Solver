@@ -7,18 +7,17 @@
     margin-top: -62px;
     z-index: 4;
 
-    &:hover{
-        .video__button-img{
+    &:hover {
+        .video__button-img {
             fill: var(--secondary-blue);
-            box-shadow: 0px 4px 15px rgba(10, 17, 85, 0.5   );
+            box-shadow: 0px 4px 15px rgba(10, 17, 85, 0.5);
         }
-
     }
 }
-.video__button-img{
+.video__button-img {
     fill: var(--white);
     border-radius: 50%;
-    transition: .3s ease;
+    transition: 0.3s ease;
 }
 .video__link {
     position: absolute;
