@@ -8,17 +8,28 @@
         margin: 0 0 50px 0;
     }
 
-    // .pricing__header-heading
+    &__selector {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-    &__header-heading {
+        width: 300px;
+        padding: 20px 30px;
+
+        background: #f7f7f7;
+        border-radius: 12px;
+
+        span {
+            color: var(--dark-blue-opacity);
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 16px;
+            letter-spacing: 0.02em;
+        }
     }
 
-    // .pricing__price-switcher
-
-    &__price-switcher {
-        width: 100px;
-        height: 50px;
-        background-color: var(--primary-blue);
+    &__selector-body {
+        padding: 0 10px;
     }
 
     // .pricing__cards
@@ -28,6 +39,10 @@
         justify-content: space-between;
         align-items: start;
     }
+}
+
+.selector-dot_active .pricing__selector-mount {
+    color: var(--primary-blue);
 }
 
 .price-card {
@@ -124,7 +139,7 @@
         color: var(--white);
 
         &::before {
-            content: "1";
+            content: "";
             position: absolute;
             left: -12px;
             top: 50%;
