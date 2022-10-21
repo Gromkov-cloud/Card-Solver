@@ -117,19 +117,22 @@
         </nav>
     </div>
     <div class="header__lang-login">
-        <div class="lang-switcher">
-    <div class="lang-switcher__current-lang-container">
-        <div class="lang-switcher__current-lang"><span>EN</span></div>
-        <div class="lang-switcher__arrow">
+        <div class="language-selector">
+    <div class="language-selector__current-language-container">
+        <div class="language-selector__current-language"><span>EN</span></div>
+        <div class="language-selector__arrow">
             <svg width="24px" height="24px">
                 <use href="#lang-arrow"></use>
             </svg>
         </div>
     </div>
-    <div class="lang-switcher__list">
-        <span class="lang-switcher__lang">RU</span>
-        <span class="lang-switcher__lang lang-switcher__lang_current">EN</span>
-        <span class="lang-switcher__lang">DE</span>
+    <div class="language-selector__list">
+        <span class="language-selector__language">RU</span>
+        <span
+            class="language-selector__language language-selector__language_current"
+            >EN</span
+        >
+        <span class="language-selector__language">DE</span>
     </div>
 </div>
 
@@ -307,8 +310,8 @@
         <div class="pricing__selector">
             <span class="pricing__selector-year">Billed yearly</span>
             <div class="pricing__selector-body">
-                <div class="selector-container">
-    <div class="selector-dot"></div>
+                <div class="switcher-container">
+    <div class="switcher-dot"></div>
 </div>
 
             </div>
@@ -1163,7 +1166,7 @@
 
 
         <script src="scripts/index.js"></script>
-        <script src="scripts/lagSwitcher.js"></script>
-        <script src="scripts/selector.js"></script>
+        <script src="scripts/languageSelector.js"></script>
+        <script src="scripts/switcher.js"></script>
     </body>
 </html>

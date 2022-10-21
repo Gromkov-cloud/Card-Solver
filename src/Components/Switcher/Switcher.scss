@@ -1,4 +1,4 @@
-.selector-container {
+.switcher-container {
     position: relative;
 
     width: 42px;
@@ -8,14 +8,13 @@
     transform: matrix(-1, 0, 0, 1, 0, 0);
     cursor: pointer;
 
-    transition: all 0.26s ease;
+    transition: all 0.26s ease-out;
 
     &:hover {
         box-shadow: 0px 0px 15px rgba(57, 140, 255, 0.64);
-        transition: all 0.26s ease;
     }
 }
-.selector-dot {
+.switcher-dot {
     position: absolute;
 
     width: 20px;
