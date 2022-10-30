@@ -35,9 +35,23 @@
     // .pricing__cards
 
     &__cards {
-        display: flex;
-        justify-content: space-between;
-        align-items: start;
+        &-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+        }
+        &-yearly {
+            display: none;
+        }
+        &-monthly {
+            display: none;
+        }
+        &-yearly_active {
+            display: flex;
+        }
+        &-monthly_active {
+            display: flex;
+        }
     }
 }
 

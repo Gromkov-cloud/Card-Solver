@@ -214,7 +214,10 @@
     <div class="features__content-container">
         <div class="features__content">
             <div class="features__accordion-container">
-                <div class="accordion features__accordion accordion_active">
+                <div
+                    class="accordion features__accordion accordion_active"
+                    id="features-accordion-item"
+                >
                     <div class="accordion__title">
                         <p class="features__accordion-title">
                             <img
@@ -231,7 +234,10 @@
                         </p>
                     </div>
                 </div>
-                <div class="accordion features__accordion">
+                <div
+                    class="accordion features__accordion"
+                    id="features-accordion-item"
+                >
                     <div class="accordion__title">
                         <p class="features__accordion-title">
                             <img
@@ -248,7 +254,10 @@
                         </p>
                     </div>
                 </div>
-                <div class="accordion features__accordion">
+                <div
+                    class="accordion features__accordion"
+                    id="features-accordion-item"
+                >
                     <div class="accordion__title">
                         <p class="features__accordion-title">
                             <img
@@ -310,377 +319,613 @@
         <div class="pricing__selector">
             <span class="pricing__selector-year">Billed yearly</span>
             <div class="pricing__selector-body">
-                <div class="switcher-container">
-    <div class="switcher-dot"></div>
-</div>
+                <label class="switch">
+    <input type="checkbox" id="switch" />
+    <span class="slider"></span>
+</label>
 
             </div>
             <span class="pricing__selector-mount">Billed monthly</span>
         </div>
     </div>
     <div class="pricing__cards">
-        <div class="price-card">
-            <div class="price-card__heading">
-                <p class="price-card__title">Rookie</p>
-                <p class="price-card__sale">Early bird 40% off!</p>
+        <div class="pricing__cards-container pricing__cards-monthly">
+            <div class="price-card">
+    <div class="price-card__heading">
+        <p class="price-card__title">Rookie</p>
+        <p class="price-card__sale">Early bird 40% off!</p>
+    </div>
+    <div class="price-card__pricing">
+        <p class="price-card__cost price-card__cost_sale">$119.99</p>
+        <p class="price-card__cost">$55.99<span>/mo</span></p>
+    </div>
+    <p class="price-card__time">1 month</p>
+    <p class="price-card__description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum culpa a,
+        perferendis qui incidunt voluptas!
+    </p>
+    <a href="#" class="button button_dark button_large price-card__button"
+        >Subscribe</a
+    >
+    <div class="price-card__options">
+        <div class="price-card__option">
+            <div class="price-card__option-thumb">
+                <img
+                    src="images/price-option-thumb-1.svg"
+                    alt="option thumbnail"
+                    class="price-card__option-icon"
+                />
             </div>
-            <div class="price-card__pricing">
-                <p class="price-card__cost price-card__cost_sale">$119.99</p>
-                <p class="price-card__cost">$55.99<span>/mo</span></p>
-            </div>
-            <p class="price-card__time">1 year</p>
-            <p class="price-card__description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
-                culpa a, perferendis qui incidunt voluptas!
-            </p>
-            <a
-                href="#"
-                class="button button_dark button_large price-card__button"
-                >Subscribe</a
-            >
-            <div class="price-card__options">
-                <div class="price-card__option">
-                    <div class="price-card__option-thumb">
-                        <img
-                            src="images/price-option-thumb-1.svg"
-                            alt="option thumbnail"
-                            class="price-card__option-icon"
-                        />
-                    </div>
-                    <p class="price-card__option-title">Preflop sims only</p>
-                    <div class="price-card__option-info">
-                        <img
-                            src="images/price-option-info.svg"
-                            alt="hover me"
-                        />
-                    </div>
-                </div>
-                <div class="price-card__option">
-                    <div class="price-card__option-thumb">
-                        <img
-                            src="images/price-option-thumb-1.svg"
-                            alt="option thumbnail"
-                            class="price-card__option-icon"
-                        />
-                    </div>
-                    <p class="price-card__option-title">No ante games</p>
-                    <div class="price-card__option-info">
-                        <img
-                            src="images/price-option-info.svg"
-                            alt="hover me"
-                        />
-                    </div>
-                </div>
-                <div class="price-card__option">
-                    <div class="price-card__option-thumb">
-                        <img
-                            src="images/price-option-thumb-1.svg"
-                            alt="option thumbnail"
-                            class="price-card__option-icon"
-                        />
-                    </div>
-                    <p class="price-card__option-title">No short stack</p>
-                    <div class="price-card__option-info">
-                        <img
-                            src="images/price-option-info.svg"
-                            alt="hover me"
-                        />
-                    </div>
-                </div>
-                <div class="price-card__option">
-                    <div class="price-card__option-thumb">
-                        <img
-                            src="images/price-option-thumb-2.svg"
-                            alt="option thumbnail"
-                            class="price-card__option-icon"
-                        />
-                    </div>
-                    <p class="price-card__option-title">50bbs</p>
-                    <div class="price-card__option-info">
-                        <img
-                            src="images/price-option-info.svg"
-                            alt="hover me"
-                        />
-                    </div>
-                </div>
-                <div class="price-card__option price-card__option_disabled">
-                    <div class="price-card__option-thumb">
-                        <img
-                            src="images/price-option-thumb-2.svg"
-                            alt="option thumbnail"
-                            class="price-card__option-icon"
-                        />
-                    </div>
-                    <p class="price-card__option-title">100bbs</p>
-                    <div class="price-card__option-info">
-                        <img
-                            src="images/price-option-info.svg"
-                            alt="hover me"
-                        />
-                    </div>
-                </div>
-                <div class="price-card__option price-card__option_disabled">
-                    <div class="price-card__option-thumb">
-                        <img
-                            src="images/price-option-thumb-1.svg"
-                            alt="option thumbnail"
-                            class="price-card__option-icon"
-                        />
-                    </div>
-                    <p class="price-card__option-title">Full pot open</p>
-                    <div class="price-card__option-info">
-                        <img
-                            src="images/price-option-info.svg"
-                            alt="hover me"
-                        />
-                    </div>
-                </div>
+            <p class="price-card__option-title">Preflop sims only</p>
+            <div class="price-card__option-info">
+                <img src="images/price-option-info.svg" alt="hover me" />
             </div>
         </div>
-        <div class="price-card">
-            <div class="price-card__heading">
-                <p class="price-card__title">PRO</p>
-                <p class="price-card__sale">Early bird 40% off!</p>
-                <span class="price-card__label">Most popular</span>
+        <div class="price-card__option">
+            <div class="price-card__option-thumb">
+                <img
+                    src="images/price-option-thumb-1.svg"
+                    alt="option thumbnail"
+                    class="price-card__option-icon"
+                />
             </div>
-            <div class="price-card__pricing">
-                <p class="price-card__cost price-card__cost_sale">$243.99</p>
-                <p class="price-card__cost">$193.99<span>/mo</span></p>
-            </div>
-            <p class="price-card__time">1 year</p>
-            <p class="price-card__description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
-                culpa a, perferendis qui incidunt voluptas!
-            </p>
-            <a
-                href="#"
-                class="button button_dark button_large price-card__button"
-                >Subscribe</a
-            >
-            <div class="price-card__options">
-                <div class="price-card__option">
-                    <div class="price-card__option-thumb">
-                        <img
-                            src="images/price-option-thumb-1.svg"
-                            alt="option thumbnail"
-                            class="price-card__option-icon"
-                        />
-                    </div>
-                    <p class="price-card__option-title">
-                        Preflop sims with flop sims
-                    </p>
-                    <div class="price-card__option-info">
-                        <img
-                            src="images/price-option-info.svg"
-                            alt="hover me"
-                        />
-                    </div>
-                </div>
-                <div class="price-card__option">
-                    <div class="price-card__option-thumb">
-                        <img
-                            src="images/price-option-thumb-1.svg"
-                            alt="option thumbnail"
-                            class="price-card__option-icon"
-                        />
-                    </div>
-                    <p class="price-card__option-title">
-                        Flop aggregared report
-                    </p>
-                    <div class="price-card__option-info">
-                        <img
-                            src="images/price-option-info.svg"
-                            alt="hover me"
-                        />
-                    </div>
-                </div>
-                <div class="price-card__option">
-                    <div class="price-card__option-thumb">
-                        <img
-                            src="images/price-option-thumb-1.svg"
-                            alt="option thumbnail"
-                            class="price-card__option-icon"
-                        />
-                    </div>
-                    <p class="price-card__option-title">
-                        Multiple preflop sims
-                    </p>
-                    <div class="price-card__option-info">
-                        <img
-                            src="images/price-option-info.svg"
-                            alt="hover me"
-                        />
-                    </div>
-                </div>
-                <div class="price-card__option">
-                    <div class="price-card__option-thumb">
-                        <img
-                            src="images/price-option-thumb-1.svg"
-                            alt="option thumbnail"
-                            class="price-card__option-icon"
-                        />
-                    </div>
-                    <p class="price-card__option-title">Many stack sizes</p>
-                    <div class="price-card__option-info">
-                        <img
-                            src="images/price-option-info.svg"
-                            alt="hover me"
-                        />
-                    </div>
-                </div>
-                <div class="price-card__option">
-                    <div class="price-card__option-thumb">
-                        <img
-                            src="images/price-option-thumb-3.svg"
-                            alt="option thumbnail"
-                            class="price-card__option-icon"
-                        />
-                    </div>
-                    <p class="price-card__option-title">500 calculations</p>
-                    <div class="price-card__option-info">
-                        <img
-                            src="images/price-option-info.svg"
-                            alt="hover me"
-                        />
-                    </div>
-                </div>
-                <div class="price-card__option">
-                    <div class="price-card__option-thumb">
-                        <img
-                            src="images/price-option-thumb-2.svg"
-                            alt="option thumbnail"
-                            class="price-card__option-icon"
-                        />
-                    </div>
-                    <p class="price-card__option-title">100bbs</p>
-                    <div class="price-card__option-info">
-                        <img
-                            src="images/price-option-info.svg"
-                            alt="hover me"
-                        />
-                    </div>
-                </div>
+            <p class="price-card__option-title">No ante games</p>
+            <div class="price-card__option-info">
+                <img src="images/price-option-info.svg" alt="hover me" />
             </div>
         </div>
-        <div class="price-card">
-            <div class="price-card__heading">
-                <p class="price-card__title">Rookie</p>
+        <div class="price-card__option">
+            <div class="price-card__option-thumb">
+                <img
+                    src="images/price-option-thumb-1.svg"
+                    alt="option thumbnail"
+                    class="price-card__option-icon"
+                />
             </div>
-            <div class="price-card__pricing">
-                <p class="price-card__cost">Coming Soon</p>
+            <p class="price-card__option-title">No short stack</p>
+            <div class="price-card__option-info">
+                <img src="images/price-option-info.svg" alt="hover me" />
             </div>
-            <p class="price-card__time">1 year</p>
-            <p class="price-card__description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
-                culpa a, perferendis qui incidunt voluptas!
+        </div>
+        <div class="price-card__option">
+            <div class="price-card__option-thumb">
+                <img
+                    src="images/price-option-thumb-2.svg"
+                    alt="option thumbnail"
+                    class="price-card__option-icon"
+                />
+            </div>
+            <p class="price-card__option-title">50bbs</p>
+            <div class="price-card__option-info">
+                <img src="images/price-option-info.svg" alt="hover me" />
+            </div>
+        </div>
+        <div class="price-card__option price-card__option_disabled">
+            <div class="price-card__option-thumb">
+                <img
+                    src="images/price-option-thumb-2.svg"
+                    alt="option thumbnail"
+                    class="price-card__option-icon"
+                />
+            </div>
+            <p class="price-card__option-title">100bbs</p>
+            <div class="price-card__option-info">
+                <img src="images/price-option-info.svg" alt="hover me" />
+            </div>
+        </div>
+        <div class="price-card__option price-card__option_disabled">
+            <div class="price-card__option-thumb">
+                <img
+                    src="images/price-option-thumb-1.svg"
+                    alt="option thumbnail"
+                    class="price-card__option-icon"
+                />
+            </div>
+            <p class="price-card__option-title">Full pot open</p>
+            <div class="price-card__option-info">
+                <img src="images/price-option-info.svg" alt="hover me" />
+            </div>
+        </div>
+    </div>
+</div>
+<div class="price-card">
+    <div class="price-card__heading">
+        <p class="price-card__title">PRO</p>
+        <p class="price-card__sale">Early bird 40% off!</p>
+        <span class="price-card__label">Most popular</span>
+    </div>
+    <div class="price-card__pricing">
+        <p class="price-card__cost price-card__cost_sale">$243.99</p>
+        <p class="price-card__cost">$193.99<span>/mo</span></p>
+    </div>
+    <p class="price-card__time">1 month</p>
+    <p class="price-card__description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum culpa a,
+        perferendis qui incidunt voluptas!
+    </p>
+    <a href="#" class="button button_dark button_large price-card__button"
+        >Subscribe</a
+    >
+    <div class="price-card__options">
+        <div class="price-card__option">
+            <div class="price-card__option-thumb">
+                <img
+                    src="images/price-option-thumb-1.svg"
+                    alt="option thumbnail"
+                    class="price-card__option-icon"
+                />
+            </div>
+            <p class="price-card__option-title">Preflop sims with flop sims</p>
+            <div class="price-card__option-info">
+                <img src="images/price-option-info.svg" alt="hover me" />
+            </div>
+        </div>
+        <div class="price-card__option">
+            <div class="price-card__option-thumb">
+                <img
+                    src="images/price-option-thumb-1.svg"
+                    alt="option thumbnail"
+                    class="price-card__option-icon"
+                />
+            </div>
+            <p class="price-card__option-title">Flop aggregared report</p>
+            <div class="price-card__option-info">
+                <img src="images/price-option-info.svg" alt="hover me" />
+            </div>
+        </div>
+        <div class="price-card__option">
+            <div class="price-card__option-thumb">
+                <img
+                    src="images/price-option-thumb-1.svg"
+                    alt="option thumbnail"
+                    class="price-card__option-icon"
+                />
+            </div>
+            <p class="price-card__option-title">Multiple preflop sims</p>
+            <div class="price-card__option-info">
+                <img src="images/price-option-info.svg" alt="hover me" />
+            </div>
+        </div>
+        <div class="price-card__option">
+            <div class="price-card__option-thumb">
+                <img
+                    src="images/price-option-thumb-1.svg"
+                    alt="option thumbnail"
+                    class="price-card__option-icon"
+                />
+            </div>
+            <p class="price-card__option-title">Many stack sizes</p>
+            <div class="price-card__option-info">
+                <img src="images/price-option-info.svg" alt="hover me" />
+            </div>
+        </div>
+        <div class="price-card__option">
+            <div class="price-card__option-thumb">
+                <img
+                    src="images/price-option-thumb-3.svg"
+                    alt="option thumbnail"
+                    class="price-card__option-icon"
+                />
+            </div>
+            <p class="price-card__option-title">500 calculations</p>
+            <div class="price-card__option-info">
+                <img src="images/price-option-info.svg" alt="hover me" />
+            </div>
+        </div>
+        <div class="price-card__option">
+            <div class="price-card__option-thumb">
+                <img
+                    src="images/price-option-thumb-2.svg"
+                    alt="option thumbnail"
+                    class="price-card__option-icon"
+                />
+            </div>
+            <p class="price-card__option-title">100bbs</p>
+            <div class="price-card__option-info">
+                <img src="images/price-option-info.svg" alt="hover me" />
+            </div>
+        </div>
+    </div>
+</div>
+<div class="price-card">
+    <div class="price-card__heading">
+        <p class="price-card__title">High-Roller</p>
+    </div>
+    <div class="price-card__pricing">
+        <p class="price-card__cost">Coming Soon</p>
+    </div>
+    <p class="price-card__time">1 month</p>
+    <p class="price-card__description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum culpa a,
+        perferendis qui incidunt voluptas!
+    </p>
+    <a href="#" class="button button_dark button_large price-card__button"
+        >Subscribe</a
+    >
+    <div class="price-card__options">
+        <div class="price-card__option price-card__option_disabled">
+            <div class="price-card__option-thumb">
+                <img
+                    src="images/price-option-thumb-1.svg"
+                    alt="option thumbnail"
+                    class="price-card__option-icon"
+                />
+            </div>
+            <p class="price-card__option-title">
+                Turns and rivers aggregation reports
             </p>
-            <a
-                href="#"
-                class="button button_dark button_large price-card__button"
-                >Subscribe</a
-            >
-            <div class="price-card__options">
-                <div class="price-card__option price-card__option_disabled">
-                    <div class="price-card__option-thumb">
-                        <img
-                            src="images/price-option-thumb-1.svg"
-                            alt="option thumbnail"
-                            class="price-card__option-icon"
-                        />
-                    </div>
-                    <p class="price-card__option-title">
-                        Turns and rivers aggregation reports
-                    </p>
-                    <div class="price-card__option-info">
-                        <img
-                            src="images/price-option-info.svg"
-                            alt="hover me"
-                        />
-                    </div>
-                </div>
-                <div class="price-card__option price-card__option_disabled">
-                    <div class="price-card__option-thumb">
-                        <img
-                            src="images/price-option-thumb-1.svg"
-                            alt="option thumbnail"
-                            class="price-card__option-icon"
-                        />
-                    </div>
-                    <p class="price-card__option-title">
-                        Complete turns and river
-                    </p>
-                    <div class="price-card__option-info">
-                        <img
-                            src="images/price-option-info.svg"
-                            alt="hover me"
-                        />
-                    </div>
-                </div>
-                <div class="price-card__option price-card__option_disabled">
-                    <div class="price-card__option-thumb">
-                        <img
-                            src="images/price-option-thumb-1.svg"
-                            alt="option thumbnail"
-                            class="price-card__option-icon"
-                        />
-                    </div>
-                    <p class="price-card__option-title">Preflop chart table</p>
-                    <div class="price-card__option-info">
-                        <img
-                            src="images/price-option-info.svg"
-                            alt="hover me"
-                        />
-                    </div>
-                </div>
-                <div class="price-card__option price-card__option_disabled">
-                    <div class="price-card__option-thumb">
-                        <img
-                            src="images/price-option-thumb-2.svg"
-                            alt="option thumbnail"
-                            class="price-card__option-icon"
-                        />
-                    </div>
-                    <p class="price-card__option-title">50bbs</p>
-                    <div class="price-card__option-info">
-                        <img
-                            src="images/price-option-info.svg"
-                            alt="hover me"
-                        />
-                    </div>
-                </div>
-                <div class="price-card__option price-card__option_disabled">
-                    <div class="price-card__option-thumb">
-                        <img
-                            src="images/price-option-thumb-2.svg"
-                            alt="option thumbnail"
-                            class="price-card__option-icon"
-                        />
-                    </div>
-                    <p class="price-card__option-title">100bbs</p>
-                    <div class="price-card__option-info">
-                        <img
-                            src="images/price-option-info.svg"
-                            alt="hover me"
-                        />
-                    </div>
-                </div>
-                <div class="price-card__option price-card__option_disabled">
-                    <div class="price-card__option-thumb">
-                        <img
-                            src="images/price-option-thumb-1.svg"
-                            alt="option thumbnail"
-                            class="price-card__option-icon"
-                        />
-                    </div>
-                    <p class="price-card__option-title">No short stack</p>
-                    <div class="price-card__option-info">
-                        <img
-                            src="images/price-option-info.svg"
-                            alt="hover me"
-                        />
-                    </div>
-                </div>
+            <div class="price-card__option-info">
+                <img src="images/price-option-info.svg" alt="hover me" />
             </div>
+        </div>
+        <div class="price-card__option price-card__option_disabled">
+            <div class="price-card__option-thumb">
+                <img
+                    src="images/price-option-thumb-1.svg"
+                    alt="option thumbnail"
+                    class="price-card__option-icon"
+                />
+            </div>
+            <p class="price-card__option-title">Complete turns and river</p>
+            <div class="price-card__option-info">
+                <img src="images/price-option-info.svg" alt="hover me" />
+            </div>
+        </div>
+        <div class="price-card__option price-card__option_disabled">
+            <div class="price-card__option-thumb">
+                <img
+                    src="images/price-option-thumb-1.svg"
+                    alt="option thumbnail"
+                    class="price-card__option-icon"
+                />
+            </div>
+            <p class="price-card__option-title">Preflop chart table</p>
+            <div class="price-card__option-info">
+                <img src="images/price-option-info.svg" alt="hover me" />
+            </div>
+        </div>
+        <div class="price-card__option price-card__option_disabled">
+            <div class="price-card__option-thumb">
+                <img
+                    src="images/price-option-thumb-2.svg"
+                    alt="option thumbnail"
+                    class="price-card__option-icon"
+                />
+            </div>
+            <p class="price-card__option-title">50bbs</p>
+            <div class="price-card__option-info">
+                <img src="images/price-option-info.svg" alt="hover me" />
+            </div>
+        </div>
+        <div class="price-card__option price-card__option_disabled">
+            <div class="price-card__option-thumb">
+                <img
+                    src="images/price-option-thumb-2.svg"
+                    alt="option thumbnail"
+                    class="price-card__option-icon"
+                />
+            </div>
+            <p class="price-card__option-title">100bbs</p>
+            <div class="price-card__option-info">
+                <img src="images/price-option-info.svg" alt="hover me" />
+            </div>
+        </div>
+        <div class="price-card__option price-card__option_disabled">
+            <div class="price-card__option-thumb">
+                <img
+                    src="images/price-option-thumb-1.svg"
+                    alt="option thumbnail"
+                    class="price-card__option-icon"
+                />
+            </div>
+            <p class="price-card__option-title">No short stack</p>
+            <div class="price-card__option-info">
+                <img src="images/price-option-info.svg" alt="hover me" />
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+        <div
+            class="pricing__cards-container pricing__cards-yearly pricing__cards-yearly_active"
+        >
+            <div class="price-card">
+    <div class="price-card__heading">
+        <p class="price-card__title">Rookie</p>
+        <p class="price-card__sale">Early bird 40% off!</p>
+    </div>
+    <div class="price-card__pricing">
+        <p class="price-card__cost price-card__cost_sale">$1555.99</p>
+        <p class="price-card__cost">$1055.99<span>/year</span></p>
+    </div>
+    <p class="price-card__time">1 year</p>
+    <p class="price-card__description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum culpa a,
+        perferendis qui incidunt voluptas!
+    </p>
+    <a href="#" class="button button_dark button_large price-card__button"
+        >Subscribe</a
+    >
+    <div class="price-card__options">
+        <div class="price-card__option">
+            <div class="price-card__option-thumb">
+                <img
+                    src="images/price-option-thumb-1.svg"
+                    alt="option thumbnail"
+                    class="price-card__option-icon"
+                />
+            </div>
+            <p class="price-card__option-title">Preflop sims only</p>
+            <div class="price-card__option-info">
+                <img src="images/price-option-info.svg" alt="hover me" />
+            </div>
+        </div>
+        <div class="price-card__option">
+            <div class="price-card__option-thumb">
+                <img
+                    src="images/price-option-thumb-1.svg"
+                    alt="option thumbnail"
+                    class="price-card__option-icon"
+                />
+            </div>
+            <p class="price-card__option-title">No ante games</p>
+            <div class="price-card__option-info">
+                <img src="images/price-option-info.svg" alt="hover me" />
+            </div>
+        </div>
+        <div class="price-card__option">
+            <div class="price-card__option-thumb">
+                <img
+                    src="images/price-option-thumb-1.svg"
+                    alt="option thumbnail"
+                    class="price-card__option-icon"
+                />
+            </div>
+            <p class="price-card__option-title">No short stack</p>
+            <div class="price-card__option-info">
+                <img src="images/price-option-info.svg" alt="hover me" />
+            </div>
+        </div>
+        <div class="price-card__option">
+            <div class="price-card__option-thumb">
+                <img
+                    src="images/price-option-thumb-2.svg"
+                    alt="option thumbnail"
+                    class="price-card__option-icon"
+                />
+            </div>
+            <p class="price-card__option-title">50bbs</p>
+            <div class="price-card__option-info">
+                <img src="images/price-option-info.svg" alt="hover me" />
+            </div>
+        </div>
+        <div class="price-card__option price-card__option_disabled">
+            <div class="price-card__option-thumb">
+                <img
+                    src="images/price-option-thumb-2.svg"
+                    alt="option thumbnail"
+                    class="price-card__option-icon"
+                />
+            </div>
+            <p class="price-card__option-title">100bbs</p>
+            <div class="price-card__option-info">
+                <img src="images/price-option-info.svg" alt="hover me" />
+            </div>
+        </div>
+        <div class="price-card__option price-card__option_disabled">
+            <div class="price-card__option-thumb">
+                <img
+                    src="images/price-option-thumb-1.svg"
+                    alt="option thumbnail"
+                    class="price-card__option-icon"
+                />
+            </div>
+            <p class="price-card__option-title">Full pot open</p>
+            <div class="price-card__option-info">
+                <img src="images/price-option-info.svg" alt="hover me" />
+            </div>
+        </div>
+    </div>
+</div>
+<div class="price-card">
+    <div class="price-card__heading">
+        <p class="price-card__title">PRO</p>
+        <p class="price-card__sale">Early bird 40% off!</p>
+        <span class="price-card__label">Most popular</span>
+    </div>
+    <div class="price-card__pricing">
+        <p class="price-card__cost price-card__cost_sale">$2766.99</p>
+        <p class="price-card__cost">$2066.99<span>/year</span></p>
+    </div>
+    <p class="price-card__time">1 year</p>
+    <p class="price-card__description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum culpa a,
+        perferendis qui incidunt voluptas!
+    </p>
+    <a href="#" class="button button_dark button_large price-card__button"
+        >Subscribe</a
+    >
+    <div class="price-card__options">
+        <div class="price-card__option">
+            <div class="price-card__option-thumb">
+                <img
+                    src="images/price-option-thumb-1.svg"
+                    alt="option thumbnail"
+                    class="price-card__option-icon"
+                />
+            </div>
+            <p class="price-card__option-title">Preflop sims with flop sims</p>
+            <div class="price-card__option-info">
+                <img src="images/price-option-info.svg" alt="hover me" />
+            </div>
+        </div>
+        <div class="price-card__option">
+            <div class="price-card__option-thumb">
+                <img
+                    src="images/price-option-thumb-1.svg"
+                    alt="option thumbnail"
+                    class="price-card__option-icon"
+                />
+            </div>
+            <p class="price-card__option-title">Flop aggregared report</p>
+            <div class="price-card__option-info">
+                <img src="images/price-option-info.svg" alt="hover me" />
+            </div>
+        </div>
+        <div class="price-card__option">
+            <div class="price-card__option-thumb">
+                <img
+                    src="images/price-option-thumb-1.svg"
+                    alt="option thumbnail"
+                    class="price-card__option-icon"
+                />
+            </div>
+            <p class="price-card__option-title">Multiple preflop sims</p>
+            <div class="price-card__option-info">
+                <img src="images/price-option-info.svg" alt="hover me" />
+            </div>
+        </div>
+        <div class="price-card__option">
+            <div class="price-card__option-thumb">
+                <img
+                    src="images/price-option-thumb-1.svg"
+                    alt="option thumbnail"
+                    class="price-card__option-icon"
+                />
+            </div>
+            <p class="price-card__option-title">Many stack sizes</p>
+            <div class="price-card__option-info">
+                <img src="images/price-option-info.svg" alt="hover me" />
+            </div>
+        </div>
+        <div class="price-card__option">
+            <div class="price-card__option-thumb">
+                <img
+                    src="images/price-option-thumb-3.svg"
+                    alt="option thumbnail"
+                    class="price-card__option-icon"
+                />
+            </div>
+            <p class="price-card__option-title">500 calculations</p>
+            <div class="price-card__option-info">
+                <img src="images/price-option-info.svg" alt="hover me" />
+            </div>
+        </div>
+        <div class="price-card__option">
+            <div class="price-card__option-thumb">
+                <img
+                    src="images/price-option-thumb-2.svg"
+                    alt="option thumbnail"
+                    class="price-card__option-icon"
+                />
+            </div>
+            <p class="price-card__option-title">100bbs</p>
+            <div class="price-card__option-info">
+                <img src="images/price-option-info.svg" alt="hover me" />
+            </div>
+        </div>
+    </div>
+</div>
+<div class="price-card">
+    <div class="price-card__heading">
+        <p class="price-card__title">High-Roller</p>
+    </div>
+    <div class="price-card__pricing">
+        <p class="price-card__cost">Coming Soon</p>
+    </div>
+    <p class="price-card__time">1 year</p>
+    <p class="price-card__description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum culpa a,
+        perferendis qui incidunt voluptas!
+    </p>
+    <a href="#" class="button button_dark button_large price-card__button"
+        >Subscribe</a
+    >
+    <div class="price-card__options">
+        <div class="price-card__option price-card__option_disabled">
+            <div class="price-card__option-thumb">
+                <img
+                    src="images/price-option-thumb-1.svg"
+                    alt="option thumbnail"
+                    class="price-card__option-icon"
+                />
+            </div>
+            <p class="price-card__option-title">
+                Turns and rivers aggregation reports
+            </p>
+            <div class="price-card__option-info">
+                <img src="images/price-option-info.svg" alt="hover me" />
+            </div>
+        </div>
+        <div class="price-card__option price-card__option_disabled">
+            <div class="price-card__option-thumb">
+                <img
+                    src="images/price-option-thumb-1.svg"
+                    alt="option thumbnail"
+                    class="price-card__option-icon"
+                />
+            </div>
+            <p class="price-card__option-title">Complete turns and river</p>
+            <div class="price-card__option-info">
+                <img src="images/price-option-info.svg" alt="hover me" />
+            </div>
+        </div>
+        <div class="price-card__option price-card__option_disabled">
+            <div class="price-card__option-thumb">
+                <img
+                    src="images/price-option-thumb-1.svg"
+                    alt="option thumbnail"
+                    class="price-card__option-icon"
+                />
+            </div>
+            <p class="price-card__option-title">Preflop chart table</p>
+            <div class="price-card__option-info">
+                <img src="images/price-option-info.svg" alt="hover me" />
+            </div>
+        </div>
+        <div class="price-card__option price-card__option_disabled">
+            <div class="price-card__option-thumb">
+                <img
+                    src="images/price-option-thumb-2.svg"
+                    alt="option thumbnail"
+                    class="price-card__option-icon"
+                />
+            </div>
+            <p class="price-card__option-title">50bbs</p>
+            <div class="price-card__option-info">
+                <img src="images/price-option-info.svg" alt="hover me" />
+            </div>
+        </div>
+        <div class="price-card__option price-card__option_disabled">
+            <div class="price-card__option-thumb">
+                <img
+                    src="images/price-option-thumb-2.svg"
+                    alt="option thumbnail"
+                    class="price-card__option-icon"
+                />
+            </div>
+            <p class="price-card__option-title">100bbs</p>
+            <div class="price-card__option-info">
+                <img src="images/price-option-info.svg" alt="hover me" />
+            </div>
+        </div>
+        <div class="price-card__option price-card__option_disabled">
+            <div class="price-card__option-thumb">
+                <img
+                    src="images/price-option-thumb-1.svg"
+                    alt="option thumbnail"
+                    class="price-card__option-icon"
+                />
+            </div>
+            <p class="price-card__option-title">No short stack</p>
+            <div class="price-card__option-info">
+                <img src="images/price-option-info.svg" alt="hover me" />
+            </div>
+        </div>
+    </div>
+</div>
+
         </div>
     </div>
 </section>
@@ -803,267 +1048,241 @@
     </div>
 </section>
 
-                <section class="faq container">
-            <img
-                src="images/faq-title-icon.svg"
-                alt="icon"
-                class="section__title-icon"
-            />
-            <h3 class="section__title faq__section-title">
-                Frequently asked questions
-            </h3>
-            <div class="faq__accordion-container">
-                <div class="accordion faq__accordion accordion_active">
-                    <div
-                        class="accordion__title faq__accordion-title-container"
-                    >
-                        <p class="faq__accordion-title">
-                            For which formats do you have solutions?
-                        </p>
-                        <img
-                            src="images/faq-accordion-plus.svg"
-                            alt="+"
-                            class="faq__accordion-plus"
-                        />
-                    </div>
-                    <div class="accordion__body">
-                        <p class="faq__accordion-body">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Maxime nesciunt minus voluptates. Nesciunt
-                            esse officiis soluta veritatis voluptate odit optio
-                            qui eveniet temporibus, enim hic ex asperiores quia
-                            quod maxime, consequatur illo quos nobis repudiandae
-                            ipsam. Unde odio animi, reprehenderit consequatur
-                            praesentium vitae laudantium amet corporis nihil
-                            mollitia qui similique harum tenetur vero asperiores
-                            omnis quae in, odit eos quod?
-                        </p>
-                    </div>
-                </div>
-                <div class="accordion faq__accordion accordion">
-                    <div
-                        class="accordion__title faq__accordion-title-container"
-                    >
-                        <p class="faq__accordion-title">
-                            I play with different rake structure or use
-                            different bet sizings. Will PLO5 Trainer work for
-                            me?
-                        </p>
-                        <img
-                            src="images/faq-accordion-plus.svg"
-                            alt="+"
-                            class="faq__accordion-plus"
-                        />
-                    </div>
-                    <div class="accordion__body">
-                        <p class="faq__accordion-body">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Maxime nesciunt minus voluptates. Nesciunt
-                            esse officiis soluta veritatis voluptate odit optio
-                            qui eveniet temporibus, enim hic ex asperiores quia
-                            quod maxime, consequatur illo quos nobis repudiandae
-                            ipsam. Unde odio animi, reprehenderit consequatur
-                            praesentium vitae laudantium amet corporis nihil
-                            mollitia qui similique harum tenetur vero asperiores
-                            omnis quae in, odit eos quod?
-                        </p>
-                    </div>
-                </div>
-                <div class="accordion faq__accordion accordion">
-                    <div
-                        class="accordion__title faq__accordion-title-container"
-                    >
-                        <p class="faq__accordion-title">
-                            Do I need a powerful PC or any solver knowledge?
-                        </p>
-                        <img
-                            src="images/faq-accordion-plus.svg"
-                            alt="+"
-                            class="faq__accordion-plus"
-                        />
-                    </div>
-                    <div class="accordion__body">
-                        <p class="faq__accordion-body">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Maxime nesciunt minus voluptates. Nesciunt
-                            esse officiis soluta veritatis voluptate odit optio
-                            qui eveniet temporibus, enim hic ex asperiores quia
-                            quod maxime, consequatur illo quos nobis repudiandae
-                            ipsam. Unde odio animi, reprehenderit consequatur
-                            praesentium vitae laudantium amet corporis nihil
-                            mollitia qui similique harum tenetur vero asperiores
-                            omnis quae in, odit eos quod?
-                        </p>
-                    </div>
-                </div>
-                <div class="accordion faq__accordion accordion">
-                    <div
-                        class="accordion__title faq__accordion-title-container"
-                    >
-                        <p class="faq__accordion-title">
-                            How does the solver manage balanced actions ?
-                        </p>
-                        <img
-                            src="images/faq-accordion-plus.svg"
-                            alt="+"
-                            class="faq__accordion-plus"
-                        />
-                    </div>
-                    <div class="accordion__body">
-                        <p class="faq__accordion-body">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Maxime nesciunt minus voluptates. Nesciunt
-                            esse officiis soluta veritatis voluptate odit optio
-                            qui eveniet temporibus, enim hic ex asperiores quia
-                            quod maxime, consequatur illo quos nobis repudiandae
-                            ipsam. Unde odio animi, reprehenderit consequatur
-                            praesentium vitae laudantium amet corporis nihil
-                            mollitia qui similique harum tenetur vero asperiores
-                            omnis quae in, odit eos quod?
-                        </p>
-                    </div>
-                </div>
-                <div class="accordion faq__accordion accordion">
-                    <div
-                        class="accordion__title faq__accordion-title-container"
-                    >
-                        <p class="faq__accordion-title">
-                            When will be post-flop available?
-                        </p>
-                        <img
-                            src="images/faq-accordion-plus.svg"
-                            alt="+"
-                            class="faq__accordion-plus"
-                        />
-                    </div>
-                    <div class="accordion__body">
-                        <p class="faq__accordion-body">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Maxime nesciunt minus voluptates. Nesciunt
-                            esse officiis soluta veritatis voluptate odit optio
-                            qui eveniet temporibus, enim hic ex asperiores quia
-                            quod maxime, consequatur illo quos nobis repudiandae
-                            ipsam. Unde odio animi, reprehenderit consequatur
-                            praesentium vitae laudantium amet corporis nihil
-                            mollitia qui similique harum tenetur vero asperiores
-                            omnis quae in, odit eos quod?
-                        </p>
-                    </div>
-                </div>
-                <div class="accordion faq__accordion accordion">
-                    <div
-                        class="accordion__title faq__accordion-title-container"
-                    >
-                        <p class="faq__accordion-title">
-                            Can I request my own sims to be added?
-                        </p>
-                        <img
-                            src="images/faq-accordion-plus.svg"
-                            alt="+"
-                            class="faq__accordion-plus"
-                        />
-                    </div>
-                    <div class="accordion__body">
-                        <p class="faq__accordion-body">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Maxime nesciunt minus voluptates. Nesciunt
-                            esse officiis soluta veritatis voluptate odit optio
-                            qui eveniet temporibus, enim hic ex asperiores quia
-                            quod maxime, consequatur illo quos nobis repudiandae
-                            ipsam. Unde odio animi, reprehenderit consequatur
-                            praesentium vitae laudantium amet corporis nihil
-                            mollitia qui similique harum tenetur vero asperiores
-                            omnis quae in, odit eos quod?
-                        </p>
-                    </div>
-                </div>
-                <div class="accordion faq__accordion accordion">
-                    <div
-                        class="accordion__title faq__accordion-title-container"
-                    >
-                        <p class="faq__accordion-title">Can I export sims?</p>
-                        <img
-                            src="images/faq-accordion-plus.svg"
-                            alt="+"
-                            class="faq__accordion-plus"
-                        />
-                    </div>
-                    <div class="accordion__body">
-                        <p class="faq__accordion-body">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Maxime nesciunt minus voluptates. Nesciunt
-                            esse officiis soluta veritatis voluptate odit optio
-                            qui eveniet temporibus, enim hic ex asperiores quia
-                            quod maxime, consequatur illo quos nobis repudiandae
-                            ipsam. Unde odio animi, reprehenderit consequatur
-                            praesentium vitae laudantium amet corporis nihil
-                            mollitia qui similique harum tenetur vero asperiores
-                            omnis quae in, odit eos quod?
-                        </p>
-                    </div>
-                </div>
-                <div class="accordion faq__accordion accordion">
-                    <div
-                        class="accordion__title faq__accordion-title-container"
-                    >
-                        <p class="faq__accordion-title">
-                            Can I use it on my phone?
-                        </p>
-                        <img
-                            src="images/faq-accordion-plus.svg"
-                            alt="+"
-                            class="faq__accordion-plus"
-                        />
-                    </div>
-                    <div class="accordion__body">
-                        <p class="faq__accordion-body">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Maxime nesciunt minus voluptates. Nesciunt
-                            esse officiis soluta veritatis voluptate odit optio
-                            qui eveniet temporibus, enim hic ex asperiores quia
-                            quod maxime, consequatur illo quos nobis repudiandae
-                            ipsam. Unde odio animi, reprehenderit consequatur
-                            praesentium vitae laudantium amet corporis nihil
-                            mollitia qui similique harum tenetur vero asperiores
-                            omnis quae in, odit eos quod?
-                        </p>
-                    </div>
-                </div>
-                <div class="accordion faq__accordion accordion">
-                    <div
-                        class="accordion__title faq__accordion-title-container"
-                    >
-                        <p class="faq__accordion-title">
-                            I have a question, how can I contact you?
-                        </p>
-                        <img
-                            src="images/faq-accordion-plus.svg"
-                            alt="+"
-                            class="faq__accordion-plus"
-                        />
-                    </div>
-                    <div class="accordion__body">
-                        <p class="faq__accordion-body">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Maxime nesciunt minus voluptates. Nesciunt
-                            esse officiis soluta veritatis voluptate odit optio
-                            qui eveniet temporibus, enim hic ex asperiores quia
-                            quod maxime, consequatur illo quos nobis repudiandae
-                            ipsam. Unde odio animi, reprehenderit consequatur
-                            praesentium vitae laudantium amet corporis nihil
-                            mollitia qui similique harum tenetur vero asperiores
-                            omnis quae in, odit eos quod?
-                        </p>
-                    </div>
-                </div>
+        <section class="faq container">
+    <img
+        src="images/faq-title-icon.svg"
+        alt="icon"
+        class="section__title-icon"
+    />
+    <h3 class="section__title faq__section-title">
+        Frequently asked questions
+    </h3>
+    <div class="faq__accordion-container">
+        <div
+            class="accordion faq__accordion accordion_active"
+            id="faq-accordion-item"
+        >
+            <div class="accordion__title faq__accordion-title-container">
+                <p class="faq__accordion-title">
+                    For which formats do you have solutions?
+                </p>
+                <img
+                    src="images/faq-accordion-plus.svg"
+                    alt="+"
+                    class="faq__accordion-plus"
+                />
             </div>
-            <div class="faq__footer">
-                <p>
-                    If you have any further questions please
-                    <a href="#">contact us</a>
+            <div class="accordion__body">
+                <p class="faq__accordion-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Maxime nesciunt minus voluptates. Nesciunt esse officiis
+                    soluta veritatis voluptate odit optio qui eveniet
+                    temporibus, enim hic ex asperiores quia quod maxime,
+                    consequatur illo quos nobis repudiandae ipsam. Unde odio
+                    animi, reprehenderit consequatur praesentium vitae
+                    laudantium amet corporis nihil mollitia qui similique harum
+                    tenetur vero asperiores omnis quae in, odit eos quod?
                 </p>
             </div>
-        </section>
+        </div>
+        <div class="accordion faq__accordion accordion" id="faq-accordion-item">
+            <div class="accordion__title faq__accordion-title-container">
+                <p class="faq__accordion-title">
+                    I play with different rake structure or use different bet
+                    sizings. Will PLO5 Trainer work for me?
+                </p>
+                <img
+                    src="images/faq-accordion-plus.svg"
+                    alt="+"
+                    class="faq__accordion-plus"
+                />
+            </div>
+            <div class="accordion__body">
+                <p class="faq__accordion-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Maxime nesciunt minus voluptates. Nesciunt esse officiis
+                    soluta veritatis voluptate odit optio qui eveniet
+                    temporibus, enim hic ex asperiores quia quod maxime,
+                    consequatur illo quos nobis repudiandae ipsam. Unde odio
+                    animi, reprehenderit consequatur praesentium vitae
+                    laudantium amet corporis nihil mollitia qui similique harum
+                    tenetur vero asperiores omnis quae in, odit eos quod?
+                </p>
+            </div>
+        </div>
+        <div class="accordion faq__accordion accordion" id="faq-accordion-item">
+            <div class="accordion__title faq__accordion-title-container">
+                <p class="faq__accordion-title">
+                    Do I need a powerful PC or any solver knowledge?
+                </p>
+                <img
+                    src="images/faq-accordion-plus.svg"
+                    alt="+"
+                    class="faq__accordion-plus"
+                />
+            </div>
+            <div class="accordion__body">
+                <p class="faq__accordion-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Maxime nesciunt minus voluptates. Nesciunt esse officiis
+                    soluta veritatis voluptate odit optio qui eveniet
+                    temporibus, enim hic ex asperiores quia quod maxime,
+                    consequatur illo quos nobis repudiandae ipsam. Unde odio
+                    animi, reprehenderit consequatur praesentium vitae
+                    laudantium amet corporis nihil mollitia qui similique harum
+                    tenetur vero asperiores omnis quae in, odit eos quod?
+                </p>
+            </div>
+        </div>
+        <div class="accordion faq__accordion accordion" id="faq-accordion-item">
+            <div class="accordion__title faq__accordion-title-container">
+                <p class="faq__accordion-title">
+                    How does the solver manage balanced actions ?
+                </p>
+                <img
+                    src="images/faq-accordion-plus.svg"
+                    alt="+"
+                    class="faq__accordion-plus"
+                />
+            </div>
+            <div class="accordion__body">
+                <p class="faq__accordion-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Maxime nesciunt minus voluptates. Nesciunt esse officiis
+                    soluta veritatis voluptate odit optio qui eveniet
+                    temporibus, enim hic ex asperiores quia quod maxime,
+                    consequatur illo quos nobis repudiandae ipsam. Unde odio
+                    animi, reprehenderit consequatur praesentium vitae
+                    laudantium amet corporis nihil mollitia qui similique harum
+                    tenetur vero asperiores omnis quae in, odit eos quod?
+                </p>
+            </div>
+        </div>
+        <div class="accordion faq__accordion accordion" id="faq-accordion-item">
+            <div class="accordion__title faq__accordion-title-container">
+                <p class="faq__accordion-title">
+                    When will be post-flop available?
+                </p>
+                <img
+                    src="images/faq-accordion-plus.svg"
+                    alt="+"
+                    class="faq__accordion-plus"
+                />
+            </div>
+            <div class="accordion__body">
+                <p class="faq__accordion-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Maxime nesciunt minus voluptates. Nesciunt esse officiis
+                    soluta veritatis voluptate odit optio qui eveniet
+                    temporibus, enim hic ex asperiores quia quod maxime,
+                    consequatur illo quos nobis repudiandae ipsam. Unde odio
+                    animi, reprehenderit consequatur praesentium vitae
+                    laudantium amet corporis nihil mollitia qui similique harum
+                    tenetur vero asperiores omnis quae in, odit eos quod?
+                </p>
+            </div>
+        </div>
+        <div class="accordion faq__accordion accordion" id="faq-accordion-item">
+            <div class="accordion__title faq__accordion-title-container">
+                <p class="faq__accordion-title">
+                    Can I request my own sims to be added?
+                </p>
+                <img
+                    src="images/faq-accordion-plus.svg"
+                    alt="+"
+                    class="faq__accordion-plus"
+                />
+            </div>
+            <div class="accordion__body">
+                <p class="faq__accordion-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Maxime nesciunt minus voluptates. Nesciunt esse officiis
+                    soluta veritatis voluptate odit optio qui eveniet
+                    temporibus, enim hic ex asperiores quia quod maxime,
+                    consequatur illo quos nobis repudiandae ipsam. Unde odio
+                    animi, reprehenderit consequatur praesentium vitae
+                    laudantium amet corporis nihil mollitia qui similique harum
+                    tenetur vero asperiores omnis quae in, odit eos quod?
+                </p>
+            </div>
+        </div>
+        <div class="accordion faq__accordion accordion" id="faq-accordion-item">
+            <div class="accordion__title faq__accordion-title-container">
+                <p class="faq__accordion-title">Can I export sims?</p>
+                <img
+                    src="images/faq-accordion-plus.svg"
+                    alt="+"
+                    class="faq__accordion-plus"
+                />
+            </div>
+            <div class="accordion__body">
+                <p class="faq__accordion-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Maxime nesciunt minus voluptates. Nesciunt esse officiis
+                    soluta veritatis voluptate odit optio qui eveniet
+                    temporibus, enim hic ex asperiores quia quod maxime,
+                    consequatur illo quos nobis repudiandae ipsam. Unde odio
+                    animi, reprehenderit consequatur praesentium vitae
+                    laudantium amet corporis nihil mollitia qui similique harum
+                    tenetur vero asperiores omnis quae in, odit eos quod?
+                </p>
+            </div>
+        </div>
+        <div class="accordion faq__accordion accordion" id="faq-accordion-item">
+            <div class="accordion__title faq__accordion-title-container">
+                <p class="faq__accordion-title">Can I use it on my phone?</p>
+                <img
+                    src="images/faq-accordion-plus.svg"
+                    alt="+"
+                    class="faq__accordion-plus"
+                />
+            </div>
+            <div class="accordion__body">
+                <p class="faq__accordion-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Maxime nesciunt minus voluptates. Nesciunt esse officiis
+                    soluta veritatis voluptate odit optio qui eveniet
+                    temporibus, enim hic ex asperiores quia quod maxime,
+                    consequatur illo quos nobis repudiandae ipsam. Unde odio
+                    animi, reprehenderit consequatur praesentium vitae
+                    laudantium amet corporis nihil mollitia qui similique harum
+                    tenetur vero asperiores omnis quae in, odit eos quod?
+                </p>
+            </div>
+        </div>
+        <div class="accordion faq__accordion accordion" id="faq-accordion-item">
+            <div class="accordion__title faq__accordion-title-container">
+                <p class="faq__accordion-title">
+                    I have a question, how can I contact you?
+                </p>
+                <img
+                    src="images/faq-accordion-plus.svg"
+                    alt="+"
+                    class="faq__accordion-plus"
+                />
+            </div>
+            <div class="accordion__body">
+                <p class="faq__accordion-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Maxime nesciunt minus voluptates. Nesciunt esse officiis
+                    soluta veritatis voluptate odit optio qui eveniet
+                    temporibus, enim hic ex asperiores quia quod maxime,
+                    consequatur illo quos nobis repudiandae ipsam. Unde odio
+                    animi, reprehenderit consequatur praesentium vitae
+                    laudantium amet corporis nihil mollitia qui similique harum
+                    tenetur vero asperiores omnis quae in, odit eos quod?
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="faq__footer">
+        <p>
+            If you have any further questions please
+            <a href="#">contact us</a>
+        </p>
+    </div>
+</section>
+
         <footer class="footer__container">
     <div class="container footer">
         <div class="footer__content">
@@ -1166,6 +1385,7 @@
 
 
         <script src="scripts/index.js"></script>
+        <script src="scripts/accordion.js"></script>
         <script src="scripts/languageSelector.js"></script>
         <script src="scripts/switcher.js"></script>
     </body>
