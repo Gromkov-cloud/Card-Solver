@@ -6,6 +6,15 @@
         align-items: center;
         justify-content: space-between;
         margin: 0 0 50px 0;
+
+        @media only screen and (max-width: 1023px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 30px;
+        }
     }
 
     &__selector {
@@ -39,16 +48,27 @@
             display: flex;
             justify-content: space-between;
             align-items: start;
+
+            gap: 30px;
+
+            @media only screen and (max-width: 1200px) {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
         }
+
         &-yearly {
             display: none;
         }
+
         &-monthly {
             display: none;
         }
+
         &-yearly_active {
             display: flex;
         }
+
         &-monthly_active {
             display: flex;
         }
@@ -62,17 +82,12 @@
 .price-card {
     max-width: 400px;
     padding: 28px 24px;
-    margin: 0 15px 0 0;
 
     background: var(--white);
     box-shadow: 0px 4px 15px rgba(10, 17, 85, 0.1);
     border-radius: 12px;
 
     transition: all 0.2s ease;
-
-    &:last-child {
-        margin: 0;
-    }
 
     &:hover {
         background: #031e3e;
@@ -155,6 +170,7 @@
         &::before {
             content: "";
             position: absolute;
+
             left: -12px;
             top: 50%;
             transform: translateY(-50%);
@@ -162,6 +178,13 @@
             height: 37px;
             z-index: -1;
             background-image: url(../../images/price-card-label.svg);
+            background-position: right;
+        }
+        @media only screen and (max-width: 1300px) {
+            display: none;
+            &::before {
+                width: 100px;
+            }
         }
     }
 
@@ -256,6 +279,10 @@
 
         &_disabled {
             opacity: 0.5;
+        }
+
+        @media only screen and (max-width: 440px) {
+            margin: 0 0 20px 0;
         }
     }
 

@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="./styles/bundle.css" />
     </head>
     <body>
+        <div class="body-overlay"></div>
         <svg style="display: none">
     <symbol viewBox="0 0 24 24" id="facebook-icon">
         <path
@@ -145,6 +146,63 @@
             >
         </div>
     </div>
+    <div class="menu-mobile">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#hit" class="nav__link">How it works</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#pricing" class="nav__link">Pricing</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#aboutUs" class="nav__link">About Us</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#faq" class="nav__link">FAQ</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__lang-login">
+            <div class="language-selector">
+    <div class="language-selector__current-language-container">
+        <div class="language-selector__current-language"><span>EN</span></div>
+        <div class="language-selector__arrow">
+            <svg width="24px" height="24px">
+                <use href="#lang-arrow"></use>
+            </svg>
+        </div>
+    </div>
+    <div class="language-selector__list">
+        <span class="language-selector__language">RU</span>
+        <span
+            class="language-selector__language language-selector__language_current"
+            >EN</span
+        >
+        <span class="language-selector__language">DE</span>
+    </div>
+</div>
+
+            <div class="login header__login">
+                <a
+                    href="#"
+                    class="button login__button button_small button_dark"
+                    >Start free trial</a
+                >
+                <a
+                    href="#"
+                    class="button login__button button_small button_light"
+                    >Sign In</a
+                >
+            </div>
+        </div>
+    </div>
+    <div class="burger">
+    <span class="burger__line burger__line_1"></span>
+    <span class="burger__line burger__line_2"></span>
+    <span class="burger__line burger__line_3"></span>
+</div>
+
 </header>
 
 
@@ -197,7 +255,10 @@
         </p>
         <p class="story__subtitle">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
-            eleifend tristique scelerisque eget.
+            eleifend tristique scelerisque eget. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Volutpat eleifend tristique scelerisque
+            eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Volutpat eleifend tristique scelerisque eget.
         </p>
     </div>
 </section>
@@ -429,10 +490,10 @@
     </div>
 </div>
 <div class="price-card">
+    <span class="price-card__label">Most popular</span>
     <div class="price-card__heading">
         <p class="price-card__title">PRO</p>
         <p class="price-card__sale">Early bird 40% off!</p>
-        <span class="price-card__label">Most popular</span>
     </div>
     <div class="price-card__pricing">
         <p class="price-card__cost price-card__cost_sale">$243.99</p>
@@ -938,14 +999,16 @@
             class="about-us__bg-img"
         />
         <div class="about-us__content">
-            <img
-                src="images/about-us-title-icon.svg"
-                alt="icon"
-                class="section__title-icon about-us__section-icon"
-            />
-            <h3 class="section__title about-us__section-title">
-                Learn from the Pros
-            </h3>
+            <div class="about-us__title">
+                <img
+                    src="images/about-us-title-icon.svg"
+                    alt="icon"
+                    class="section__title-icon about-us__section-icon"
+                />
+                <h3 class="section__title about-us__section-title">
+                    Learn from the Pros
+                </h3>
+            </div>
             <p class="section__subtitle about-us__section-subtitle">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Volutpat eleifend tristique scelerisque eget.
@@ -1049,14 +1112,16 @@
 </section>
 
         <section class="faq container" id="#faq">
-    <img
-        src="images/faq-title-icon.svg"
-        alt="icon"
-        class="section__title-icon"
-    />
-    <h3 class="section__title faq__section-title">
-        Frequently asked questions
-    </h3>
+    <div class="faq__title">
+        <img
+            src="images/faq-title-icon.svg"
+            alt="icon"
+            class="section__title-icon"
+        />
+        <h3 class="section__title faq__section-title">
+            Frequently asked questions
+        </h3>
+    </div>
     <div class="faq__accordion-container">
         <div
             class="accordion faq__accordion accordion_active"
@@ -1385,6 +1450,7 @@
 
 
         <script src="scripts/index.js"></script>
+        <script src="scripts/burger.js"></script>
         <script src="scripts/accordion.js"></script>
         <script src="scripts/languageSelector.js"></script>
         <script src="scripts/switcher.js"></script>

@@ -37,6 +37,12 @@
     &__content {
         display: flex;
         justify-content: space-between;
+        gap: 20px;
+
+        @media only screen and (max-width: 1023px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 }
 
@@ -117,6 +123,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 10px;
+
+        @media only screen and (max-width: 1100px) {
+            flex-direction: column;
+        }
     }
 
     // .review__footer-date

@@ -49,6 +49,11 @@ ul {
         line-height: 22px;
         padding: 15px 22px;
         font-weight: 600;
+
+        @media only screen and (max-width: 767px) {
+            font-size: 16px;
+            padding: 10px 15px;
+        }
     }
     &_small {
         font-size: 14px;
@@ -116,6 +121,7 @@ ul {
 
 .section {
     &__title {
+        display: block;
         padding: 0;
         margin: 0;
 
@@ -125,12 +131,19 @@ ul {
         letter-spacing: -0.03em;
 
         color: var(--dark-blue);
+
+        @media only screen and (max-width: 440px) {
+            font-size: 28px;
+        }
     }
 
     &__title-icon {
         display: block;
         margin: 0 0 24px 0;
         padding: 0;
+        @media only screen and (max-width: 1023px) {
+            margin: 0 20px 0 0;
+        }
     }
 
     &__subtitle {
@@ -150,4 +163,35 @@ ul {
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 80px 100px 80px;
+
+    @media only screen and (max-width: 1023px) {
+        padding: 0 20px 100px 20px;
+    }
+    @media only screen and (max-width: 767px) {
+        padding: 0 40px 60px 40px;
+    }
+}
+
+.body-overlay {
+    position: absolute;
+    z-index: -1;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+
+    transition: opacity 0.26s ease-in-out;
+
+    &_active {
+        z-index: 9;
+    }
+    &_opacity {
+        opacity: 1;
+    }
+}
+
+.body_hidden {
+    overflow: hidden;
 }
