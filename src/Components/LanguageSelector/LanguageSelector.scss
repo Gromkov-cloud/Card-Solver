@@ -10,6 +10,7 @@
     text-transform: uppercase;
 
     user-select: none;
+    z-index: 3;
 
     @media only screen and (max-width: 767px) {
         display: none;
@@ -74,7 +75,7 @@
         &_active {
             opacity: 1;
             transform: scaleY(1);
-            z-index: 1;
+            z-index: 10;
         }
     }
 

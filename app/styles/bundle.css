@@ -1220,6 +1220,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 11;
   padding: 15px;
 }
 
@@ -1447,6 +1448,7 @@ ul {
   line-height: 16px;
   text-transform: uppercase;
   user-select: none;
+  z-index: 3;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1502,7 +1504,7 @@ ul {
 .language-selector__list_active {
   opacity: 1;
   transform: scaleY(1);
-  z-index: 1;
+  z-index: 10;
 }
 
 .language-selector__language {

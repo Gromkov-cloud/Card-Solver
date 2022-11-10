@@ -118,7 +118,7 @@
         </nav>
     </div>
     <div class="header__lang-login">
-        <div class="language-selector">
+        <div class="language-selector" id="lang-selector-1">
     <div class="language-selector__current-language-container">
         <div class="language-selector__current-language"><span>EN</span></div>
         <div class="language-selector__arrow">
@@ -128,12 +128,13 @@
         </div>
     </div>
     <div class="language-selector__list">
-        <span class="language-selector__language">RU</span>
+        <span class="language-selector__language" data-lang="RU">RU</span>
         <span
             class="language-selector__language language-selector__language_current"
+            data-lang="EN"
             >EN</span
         >
-        <span class="language-selector__language">DE</span>
+        <span class="language-selector__language" data-lang="DE">DE</span>
     </div>
 </div>
 
@@ -164,24 +165,31 @@
             </ul>
         </nav>
         <div class="header__lang-login">
-            <div class="language-selector">
-    <div class="language-selector__current-language-container">
-        <div class="language-selector__current-language"><span>EN</span></div>
-        <div class="language-selector__arrow">
-            <svg width="24px" height="24px">
-                <use href="#lang-arrow"></use>
-            </svg>
-        </div>
-    </div>
-    <div class="language-selector__list">
-        <span class="language-selector__language">RU</span>
-        <span
-            class="language-selector__language language-selector__language_current"
-            >EN</span
-        >
-        <span class="language-selector__language">DE</span>
-    </div>
-</div>
+            <div class="language-selector" id="lang-selector-2">
+                <div class="language-selector__current-language-container">
+                    <div class="language-selector__current-language">
+                        <span>EN</span>
+                    </div>
+                    <div class="language-selector__arrow">
+                        <svg width="24px" height="24px">
+                            <use href="#lang-arrow"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="language-selector__list">
+                    <span class="language-selector__language" data-lang="RU"
+                        >RU</span
+                    >
+                    <span
+                        class="language-selector__language language-selector__language_current"
+                        data-lang="EN"
+                        >EN</span
+                    >
+                    <span class="language-selector__language" data-lang="DE"
+                        >DE</span
+                    >
+                </div>
+            </div>
 
             <div class="login header__login">
                 <a
